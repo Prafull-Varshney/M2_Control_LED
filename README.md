@@ -9,3 +9,5 @@
 [![Build CI-Linux](https://github.com/Prafull-Varshney/M2_Control_LED/actions/workflows/build.yml/badge.svg)](https://github.com/Prafull-Varshney/M2_Control_LED/actions/workflows/build.yml)
 ## cppcheck
 [![Cppcheck](https://github.com/Prafull-Varshney/M2_Control_LED/actions/workflows/cpp_check.yml/badge.svg)](https://github.com/Prafull-Varshney/M2_Control_LED/actions/workflows/cpp_check.yml)
+## Valgrind
+[![Valgrind](https://github.com/Prafull-Varshney/M2_Control_LED/actions/workflows/valgrind.yml/badge.svg)](https://github.com/Prafull-Varshney/M2_Control_LED/actions/workflows/valgrind.yml)
