@@ -1,0 +1,48 @@
+   1               		.file	"control_led.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	main
+  18               	main:
+  19               	.LFB6:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 84B1      		in r24,36-32
+  25 0002 8C60      		ori r24,lo8(12)
+  26 0004 84B9      		out 36-32,r24
+  27               	.LM3:
+  28 0006 2098      		cbi 36-32,0
+  29               	.L5:
+  30               	.LM4:
+  31 0008 1899      		sbic 35-32,0
+  32 000a 00C0      		rjmp .L2
+  33               	.LM5:
+  34 000c 85B1      		in r24,37-32
+  35 000e 8C60      		ori r24,lo8(12)
+  36 0010 00C0      		rjmp .L6
+  37               	.L2:
+  38               	.LM6:
+  39 0012 85B1      		in r24,37-32
+  40 0014 837F      		andi r24,lo8(-13)
+  41               	.L6:
+  42 0016 85B9      		out 37-32,r24
+  43 0018 00C0      		rjmp .L5
+  44               	.LFE6:
+  70               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 control_led.c
+C:\Users\prafu\AppData\Local\Temp/ccW5XBDR.s:2      *ABS*:0000003f __SREG__
+C:\Users\prafu\AppData\Local\Temp/ccW5XBDR.s:3      *ABS*:0000003e __SP_H__
+C:\Users\prafu\AppData\Local\Temp/ccW5XBDR.s:4      *ABS*:0000003d __SP_L__
+C:\Users\prafu\AppData\Local\Temp/ccW5XBDR.s:5      *ABS*:00000034 __CCP__
+C:\Users\prafu\AppData\Local\Temp/ccW5XBDR.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\prafu\AppData\Local\Temp/ccW5XBDR.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\prafu\AppData\Local\Temp/ccW5XBDR.s:18     .text:00000000 main
+
+NO UNDEFINED SYMBOLS
